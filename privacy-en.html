@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SnapSide Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: #f6f6f6;
+      color: #1a1a1a;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e4e4e7;
+    }
+    .brand-mark {
+      display: inline-flex;
+      width: 28px;
+      height: 24px;
+      padding: 2px;
+      background: #6678ea;
+      border-radius: 6px;
+      gap: 2px;
+      flex-shrink: 0;
+    }
+    .brand-main { flex: 1.4; background: #fff; border-radius: 3px; }
+    .brand-side { flex: 1; background: #a3aef2; border-radius: 3px; }
+    .brand-name { font-size: 18px; font-weight: 700; }
+    .brand-tag {
+      padding: 2px 8px;
+      background: #edeffd;
+      color: #4258e5;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 999px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 0 8px;
+      letter-spacing: 0.005em;
+    }
+    .updated { color: #71717a; font-size: 13px; margin-bottom: 32px; }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 36px 0 12px;
+      letter-spacing: 0.005em;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 24px 0 8px;
+    }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px; padding-left: 22px; }
+    li { margin-bottom: 4px; }
+    code {
+      background: #f4f4f5;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 13px;
+      color: #3f3f46;
+    }
+    a { color: #4258e5; }
+    a:hover { text-decoration: underline; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e4e4e7;
+      vertical-align: top;
+    }
+    th { background: #fafafa; font-weight: 600; color: #3f3f46; }
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #71717a;
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .back-link:hover { color: #4258e5; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="brand-mark" aria-hidden="true">
+        <span class="brand-main"></span><span class="brand-side"></span>
+      </span>
+      <span class="brand-name">SnapSide</span>
+      <span class="brand-tag">Privacy Policy</span>
+    </header>
+
+    <h1>SnapSide Privacy Policy</h1>
+    <p class="updated">Last updated: May 18, 2026</p>
+
+    <p>SnapSide ("this extension") is a Chrome browser extension developed by ame_dev ("the developer"). This policy explains how user data is handled when you use this extension.</p>
+
+    <h2>1. Collection of Personal Information</h2>
+    <p>This extension <strong>does not collect any personal information</strong>. Your browsing history, page content, and input data are never sent to the developer's server.</p>
+
+    <h2>2. Information Stored Locally</h2>
+    <p>This extension stores the following information <strong>only inside your browser</strong> (via Chrome's <code>chrome.storage</code> API):</p>
+    <ul>
+      <li>Side window settings such as width ratio and position</li>
+      <li>URLs registered as favorites</li>
+      <li>Initial install timestamp (used for managing the free trial period)</li>
+      <li>Session information (main / side window IDs, tab history)</li>
+    </ul>
+    <p>This data persists across browser and PC restarts but is <strong>never transmitted externally</strong>.</p>
+
+    <h2>3. Third-Party Services</h2>
+
+    <h3>3.1 ExtensionPay (License management / Payment processing)</h3>
+    <p>License purchases (after the free trial) are processed by <strong>ExtensionPay</strong> (operated by Glench LLC) using <strong>Stripe</strong>.</p>
+    <ul>
+      <li>When making a purchase, you are redirected to the ExtensionPay payment page (extensionpay.com).</li>
+      <li>Your email address and payment information (credit card details, etc.) are received and processed directly by <strong>Stripe</strong>. The developer does not have access to this information.</li>
+      <li>For more details, please refer to:
+        <ul>
+          <li><a href="https://extensionpay.com/privacy" target="_blank" rel="noopener">ExtensionPay Privacy Policy</a></li>
+          <li><a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe Privacy Policy</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>3.2 Google Favicons API (Favicon retrieval for favorites)</h3>
+    <p>To display the favicon of URLs you register as favorites, this extension sends <strong>only the domain name of the URL</strong> to Google's public favicon service (<code>https://www.google.com/s2/favicons</code>). This is Google's standard favicon retrieval feature and does not include any personal information.</p>
+
+    <h2>4. Purpose of Permissions</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>tabs</code></td><td>Creating, moving, and managing tabs (split, merge, swap)</td></tr>
+        <tr><td><code>windows</code></td><td>Creating and positioning side windows</td></tr>
+        <tr><td><code>storage</code></td><td>Saving settings and favorites</td></tr>
+        <tr><td><code>contextMenus</code></td><td>Adding items to the right-click menu</td></tr>
+        <tr><td><code>scripting</code></td><td>Re-injecting content scripts into existing tabs after extension updates</td></tr>
+        <tr><td><code>system.display</code></td><td>Retrieving display information for sub-monitor support</td></tr>
+        <tr><td><code>host_permissions: &lt;all_urls&gt;</code></td><td>Displaying the bottom-left toolbar on all web pages inside the side window</td></tr>
+      </tbody>
+    </table>
+    <p>These permissions are used <strong>only for providing SnapSide's features</strong> and are not used to record or transmit your browsing data.</p>
+
+    <h2>5. Analytics / Tracking</h2>
+    <p>This extension <strong>does not use any analytics tools such as Google Analytics</strong>. We do not collect any operation logs or usage statistics.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>This extension is not intended for use by children under the age of 13.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>This policy may be changed without prior notice. Significant changes will be announced through extension updates.</p>
+
+    <h2>8. Contact</h2>
+    <p>For questions regarding this policy, please contact:</p>
+    <ul>
+      <li>Email: amemitai@gmail.com</li>
+      <li>Developer: ame_dev</li>
+    </ul>
+
+    <a class="back-link" href="./index.html">← Back to top</a>
+  </main>
+</body>
+</html>
