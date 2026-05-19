@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SnapSide</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: #f6f6f6;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    main {
+      max-width: 520px;
+      width: 90%;
+      padding: 48px 32px;
+      background: #fff;
+      border: 1px solid #e4e4e7;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(20, 23, 64, 0.06);
+      text-align: center;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .brand-mark {
+      display: inline-flex;
+      width: 32px;
+      height: 28px;
+      padding: 3px;
+      background: #6678ea;
+      border-radius: 7px;
+      gap: 3px;
+    }
+    .brand-main { flex: 1.4; background: #fff; border-radius: 3px; }
+    .brand-side { flex: 1; background: #a3aef2; border-radius: 3px; }
+    .brand-name { font-size: 22px; font-weight: 700; letter-spacing: 0.01em; }
+    h1 {
+      font-size: 12px;
+      font-weight: 700;
+      color: #71717a;
+      margin: 0 0 20px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .links { display: grid; gap: 12px; margin-bottom: 24px; }
+    .link {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #edeffd;
+      color: #4258e5;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background-color 0.12s, transform 0.06s;
+    }
+    .link:hover { background: #d2d7f9; }
+    .link:active { transform: scale(0.98); }
+    .footer { font-size: 12px; color: #a1a1aa; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="brand-main"></span><span class="brand-side"></span>
+      </span>
+      <span class="brand-name">SnapSide</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <div class="links">
+      <a class="link" href="./privacy-ja.html">日本語</a>
+      <a class="link" href="./privacy-en.html">English</a>
+    </div>
+    <p class="footer">© ame_dev</p>
+  </main>
+</body>
+</html>
